@@ -1,6 +1,8 @@
 package Arrays;
 // import java.util.Arrays.*;
 
+import java.util.Arrays;
+
 public class ArrayDemo {
     public static void main(String[] args) {
 
@@ -8,6 +10,7 @@ public class ArrayDemo {
         // for (boolean n : num) {
         // System.out.println(n);
         // }
+
 
         // Single dimension array
         int nums[] = { 3, 4, 2, 1, 5 };
@@ -62,6 +65,23 @@ public class ArrayDemo {
 
         // Three dimensional array;
         int threeArr[][][] = new int[3][5][7];
+
+        // Array copy methods 
+        // looping and copying 
+
+        int[] copyNumbers = new int[nums.length];
+        // First method
+
+
+        System.arraycopy(nums, 0, copyNumbers, 0, nums.length);
+
+        int[] num2 = Arrays.copyOfRange(copyNumbers, 0, copyNumbers.length);
+
+        System.out.println(Arrays.toString(copyNumbers));
+        System.out.println(Arrays.toString(num2));
+
+
+
 
     }
 }
