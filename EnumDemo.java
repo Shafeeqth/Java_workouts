@@ -6,7 +6,7 @@ enum Enum {
 
 enum Laptop {
     Macbook(150000), Thinkpad(58000), Surface(46000);
-
+    
     private int price;
 
     public int getPrice() {
@@ -14,6 +14,7 @@ enum Laptop {
     }
 
     public void setPrice(int price) {
+        
         this.price = price;
     }
 

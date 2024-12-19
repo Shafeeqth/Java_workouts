@@ -17,6 +17,7 @@ public class Demo {
 
     Calculator calc = new Calculator();
     int result = calc.add(n1, n2);
-    sout
+    System.out.println(result);
+    
 
 }
